@@ -1,0 +1,61 @@
+package com.example.demo.Controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.example.demo.Models.Actividad;
+import com.example.demo.Services.ActividadService;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/appActivitats")
+public class ActividadController {
+
+    @Autowired
+    private ActividadService actividadService;
+
+    // Crear una nueva actividad
+    @PostMapping
+    public ResponseEntity<Actividad> crearActividad(@RequestBody Actividad actividad) {
+        Actividad nuevaActividad = actividadService.crearActividad(actividad);
+        return ResponseEntity.ok(nuevaActividad);
+    }
+
+    // Consultar actividades
+    @GetMapping("/actividades")
+    public ResponseEntity<List<Actividad>> obtenerActividades() {
+        List<Actividad> actividades = actividadService.obtenerActividades();
+        return ResponseEntity.ok(actividades);
+    }
+
+    // Inscribirse en una actividad
+    @PostMapping("/{actividadId}/inscribir/{usuarioId}")
+    public ResponseEntity<Void> inscribirUsuario(@PathVariable Long actividadId, @PathVariable Long usuarioId) {
+        actividadService.inscribirUsuario(actividadId, usuarioId);
+        return ResponseEntity.ok().build();
+    }
+
+    // Consultar información de una actividad específica
+    @GetMapping("/actividades/{id}")
+    public ResponseEntity<Actividad> obtenerActividad(@PathVariable Long id) {
+        Actividad actividad = actividadService.obtenerActividad(id);
+        return ResponseEntity.ok(actividad);
+    }
+
+    // Exportar actividades en formato JSON
+    @GetMapping("/actividades/exportar")
+    public ResponseEntity<List<Actividad>> exportarActividades() {
+        List<Actividad> actividades = actividadService.obtenerActividades();
+        return ResponseEntity.ok(actividades);
+    }
+
+    // Importar actividades desde un archivo JSON
+    @PostMapping("/actividades/importar")
+    public ResponseEntity<Void> importarActividades(@RequestBody List<Actividad> actividades) {
+        actividadService.importarActividades(actividades);
+        return ResponseEntity.noContent().build();
+    }
+}
+

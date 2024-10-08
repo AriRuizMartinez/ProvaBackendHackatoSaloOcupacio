@@ -1,0 +1,64 @@
+package com.example.demo.Controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Models.HeroisSpring;
+import com.example.demo.Services.HeroisSpringService;
+
+@RestController
+public class Controller
+{
+	@Autowired
+	HeroisSpringService hsr;
+	
+	
+	@GetMapping(path="/hello")
+	public String hello(@RequestParam String nomAlumne, @RequestParam String nomAlumne2 )
+	{
+		return "hola "+nomAlumne+" y "+nomAlumne2;
+	}
+	
+	
+//	@GetMapping(path="/newHeroi")
+//	public String newHeroi()
+//	{
+//		HeroisSpring hs = new HeroisSpring();
+//		hs.setNom("Diego");
+//		hs.setPoder(10.25);
+//		
+//		hsr.save(hs);
+//		
+//		return "Saved!";
+//	}
+	
+//	@GetMapping(path="/newHeroiPoder")
+//	public String newHeroiPoder(@RequestParam double poder)
+//	{
+//		HeroisSpring hs = new HeroisSpring();
+//		hs.setNom("Diego");
+//		hs.setPoder(poder);
+//		
+//		hsr.save(hs);
+//		
+//		return "Saved!";
+//	}
+	
+	@GetMapping(path="/millorarHeroi")
+	public String millorarHeroi(@RequestParam int id, @RequestParam double poder)
+	{
+		return hsr.milloraHeroi(id, poder);
+	}
+	
+	
+	@GetMapping(path="/getByNom")
+	public List<HeroisSpring> getByNom(@RequestParam String nom)
+	{
+		return hsr.findByNomOrderByPoderDesc(nom);
+	}
+}
+
