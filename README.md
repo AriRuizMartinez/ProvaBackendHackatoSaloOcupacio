@@ -85,36 +85,41 @@ Activitat:
 Amb els endpoints es compleixen els requisits tecnics i funcionals esmentats. La resta de requisits també es compleixen:
 
 1. El projecte segueix un patró estructural
-El projecte està basat en l'arquitectura MVC (Model-View-Controller), que és un patró arquitectònic molt utilitzat en aplicacions Spring Boot. Aquesta estructura separa clarament les responsabilitats de cada component:
 
-Model: Representa les dades i les regles de negoci de l'aplicació. Les entitats com Actividad s'encarreguen d'emmagatzemar la informació.
-Controller: Gestiona les sol·licituds HTTP, connectant els models amb les vistes.
-View: Actualment el projecte no te vista, però aixi es veu més clar que estan separats tant el model, com la vista, com el controlador.
+    El projecte està basat en l'arquitectura MVC (Model-View-Controller), que és un patró arquitectònic molt utilitzat en aplicacions Spring Boot. Aquesta estructura separa clarament les responsabilitats de cada component:
+
+    Model: Representa les dades i les regles de negoci de l'aplicació. Les entitats com Actividad s'encarreguen d'emmagatzemar la informació.
+    Controller: Gestiona les sol·licituds HTTP, connectant els models amb les vistes.
+    View: Actualment el projecte no te vista, però aixi es veu més clar que estan separats tant el model, com la vista, com el controlador.
 
 2. El codi és escalable i reutilitzable
-El codi està dissenyat per ser escalable gràcies a l'ús de Spring Boot, que permet modularitzar funcionalitats. El fet de tenir components desacoblats, com els controladors i els serveis, 
-facilita que es puguin afegir noves funcionalitats o escalar l'aplicació sense haver de modificar la major part del codi existent.
+
+    El codi està dissenyat per ser escalable gràcies a l'ús de Spring Boot, que permet modularitzar funcionalitats. El fet de tenir components desacoblats, com els controladors i els serveis, 
+    facilita que es puguin afegir noves funcionalitats o escalar l'aplicació sense haver de modificar la major part del codi existent.
 
 3. El codi està optimitzat i el seu rendiment és eficient
-L'aplicació està optimitzada per manejar arxius JSON grans i múltiples sol·licituds simultànies gràcies a les següents característiques:
 
-Spring Boot utilitza mecanismes interns de gestió de recursos, com la gestió de sessions i connexions a la base de dades, que milloren l'eficiència i el rendiment.
-L'ús d'ObjectMapper de Jackson per convertir dades JSON a objectes Java està optimitzat, ja que és una llibreria molt eficient en termes de deserialització.
-El disseny de l'API assegura que cada sol·licitud sigui manejada de manera independent, la qual cosa facilita la seva escalabilitat en entorns distribuïts.
+    L'aplicació està optimitzada per manejar arxius JSON grans i múltiples sol·licituds simultànies gràcies a les següents característiques:
+
+    Spring Boot utilitza mecanismes interns de gestió de recursos, com la gestió de sessions i connexions a la base de dades, que milloren l'eficiència i el rendiment.
+    L'ús d'ObjectMapper de Jackson per convertir dades JSON a objectes Java està optimitzat, ja que és una llibreria molt eficient en termes de deserialització.
+    El disseny de l'API assegura que cada sol·licitud sigui manejada de manera independent, la qual cosa facilita la seva escalabilitat en entorns distribuïts.
 
 4. El codi segueix bones pràctiques de programació
-El codi segueix bones pràctiques de programació:
 
-Neteja i llegibilitat: El codi està ben estructurat amb noms de mètodes i variables descriptius, cosa que facilita la seva comprensió per altres desenvolupadors.
-Gestió d'errors: L'aplicació gestiona correctament els errors, com quan es puja un arxiu buit o un arxiu amb format incorrecte. Això ajuda a evitar excepcions no controlades durant l'execució.
-Modularitat: Les diferents funcionalitats es divideixen en components separats (models, controladors, serveis), seguint el principi de separació de responsabilitats.
+    El codi segueix bones pràctiques de programació:
+
+    Neteja i llegibilitat: El codi està ben estructurat amb noms de mètodes i variables descriptius, cosa que facilita la seva comprensió per altres desenvolupadors.
+    Gestió d'errors: L'aplicació gestiona correctament els errors, com quan es puja un arxiu buit o un arxiu amb format incorrecte. Això ajuda a evitar excepcions no controlades durant l'execució.
+    Modularitat: Les diferents funcionalitats es divideixen en components separats (models, controladors, serveis), seguint el principi de separació de responsabilitats.
 
 5. Les funcions tenen una única responsabilitat
-Cada funció dins del projecte segueix el principi de responsabilitat única (Single Responsibility Principle), que és un dels pilars dels principis SOLID:
 
-Els controladors tenen la responsabilitat de gestionar les sol·licituds HTTP.
-Les classes model, com Actividad, només tenen la responsabilitat de representar les dades i no contenen lògica de negoci.
-Aquest enfocament permet un codi més fàcil de mantenir i modificar, ja que cada funció o classe té una única responsabilitat clarament definida. Això també redueix el risc d'introduir errors quan s'afegeixen noves funcionalitats.
+    Cada funció dins del projecte segueix el principi de responsabilitat única (Single Responsibility Principle), que és un dels pilars dels principis SOLID:
+
+    Els controladors tenen la responsabilitat de gestionar les sol·licituds HTTP.
+    Les classes model, com Actividad, només tenen la responsabilitat de representar les dades i no contenen lògica de negoci.
+    Aquest enfocament permet un codi més fàcil de mantenir i modificar, ja que cada funció o classe té una única responsabilitat clarament definida. Això també redueix el risc d'introduir errors quan s'afegeixen noves funcionalitats.
 
 Autor
 Ari Ruiz Martinez - ariruizmartinez@gmail.com
