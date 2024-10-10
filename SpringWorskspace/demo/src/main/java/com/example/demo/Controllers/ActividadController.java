@@ -109,13 +109,14 @@ public class ActividadController {
 	        
 		} catch (StreamReadException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			return ResponseEntity.badRequest().build();
 		} catch (DatabindException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 
 		return ResponseEntity.internalServerError().build();

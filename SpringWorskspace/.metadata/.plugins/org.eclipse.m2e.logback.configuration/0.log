@@ -1229,3 +1229,15 @@ java.io.InvalidClassException: org.eclipse.m2e.core.internal.project.registry.Ve
 2024-10-10 18:17:45,601 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-10-10 18:17:45,620 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-10-10 18:17:45,622 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\2nDAMvi\M6AccesoADatos\UF2\ProvaBackendHackatoSaloOcupacio\SpringWorskspace\demo\src\test\resources
+2024-10-10 19:40:05,422 [Worker-219: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-10 19:40:05,466 [Worker-219: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-10 19:40:05,468 [Worker-219: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\2nDAMvi\M6AccesoADatos\UF2\ProvaBackendHackatoSaloOcupacio\SpringWorskspace\demo\src\test\resources
+2024-10-10 19:40:40,758 [Worker-213: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-10 19:40:40,781 [Worker-213: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-10 19:40:40,782 [Worker-213: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\2nDAMvi\M6AccesoADatos\UF2\ProvaBackendHackatoSaloOcupacio\SpringWorskspace\demo\src\test\resources
+2024-10-10 19:46:10,320 [Worker-223: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-10 19:46:10,323 [Worker-223: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-10 19:46:10,325 [Worker-223: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\2nDAMvi\M6AccesoADatos\UF2\ProvaBackendHackatoSaloOcupacio\SpringWorskspace\demo\src\test\resources
+2024-10-10 19:47:27,406 [Worker-225: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-10-10 19:47:27,409 [Worker-225: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-10-10 19:47:27,410 [Worker-225: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory F:\2nDAMvi\M6AccesoADatos\UF2\ProvaBackendHackatoSaloOcupacio\SpringWorskspace\demo\src\test\resources
