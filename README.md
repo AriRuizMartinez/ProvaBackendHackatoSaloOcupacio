@@ -128,6 +128,7 @@ Amb els endpoints es compleixen els requisits tecnics i funcionals esmentats. La
     Aquest enfocament permet un codi més fàcil de mantenir i modificar, ja que cada funció o classe té una única responsabilitat clarament definida. Això també redueix el risc d'introduir errors quan s'afegeixen noves funcionalitats.
 
 Autor
-    Ari Ruiz Martinez - ariruizmartinez@gmail.com
+
+Ari Ruiz Martinez - ariruizmartinez@gmail.com
 
 
