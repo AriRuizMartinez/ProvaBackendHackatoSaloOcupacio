@@ -3,39 +3,36 @@ Prova tecnica
 
 Descripció
 
-Aquest projecte és una API desenvolupada amb Spring Boot en Java. Permet exportar e importar dades en format JSON a través d'operacions HTTP. A més, es compleixen tots els requisits especificats en la prova tècnica.
+    Aquest projecte és una API desenvolupada amb Spring Boot en Java. Permet exportar e importar dades en format JSON a través d'operacions HTTP. A més, es compleixen tots els requisits especificats en la prova tècnica.
+
 
 Requisits previs
 
 Abans d'executar el projecte localment, assegura't de tenir instal·lats els següents components:
 
-Java 11 o superior
-
-Maven 3.6+
-
-Un IDE compatible amb projectes Spring Boot (com IntelliJ IDEA o Eclipse)
-
-Una base de dades MySQL amb el nom que posa a l'application.properties, en aquest cas, hackato. Es pot utilitzar un altra base de dades, però s'hauria d'especificar a l'application.properties.
-
-A més a més, l'usuario root haurà de tindre la contrasenya super3, o, en cas de no voler cambiarla també s'hauria d'especificar a l'application.properties.
+    Java 11 o superior
+    Maven 3.6+
+    Un IDE compatible amb projectes Spring Boot (com IntelliJ IDEA o Eclipse)
+    Una base de dades MySQL amb el nom que posa a l'application.properties, en aquest cas, hackato. Es pot utilitzar un altra base de dades, però s'hauria d'especificar a l'application.properties.
+    A més a més, l'usuario root haurà de tindre la contrasenya super3, o, en cas de no voler cambiarla també s'hauria d'especificar a l'application.properties.
 
 Requisits opcionals
 
-Recomano fer servir Insomnia o Postman per fer les peticions de tipus POST, PUT o DELETE.
+    Recomano fer servir Insomnia o Postman per fer les peticions de tipus POST, PUT o DELETE.
 
 Configuració del projecte
 
-Clona el repositori al teu ordinador:
+    Clona el repositori al teu ordinador:
 
-git clone https://github.com/AriRuizMartinez/ProvaBackendHackatoSaloOcupacio.git
+    git clone https://github.com/AriRuizMartinez/ProvaBackendHackatoSaloOcupacio.git
 
 Despres obre el teu IDE:
 
-Importa el projecte com a projecte Maven.
+    Importa el projecte com a projecte Maven.
 
-Executa la classe principal del projecte, que és DemoApplication.java.
+    Executa la classe principal del projecte, que és DemoApplication.java.
 
-L'aplicació s'executarà en http://localhost:9000. (El port també es pot cambiar a l'application.properties en cas de que el 9000 estigues ocupat)
+    L'aplicació s'executarà en http://localhost:9000. (El port també es pot cambiar a l'application.properties en cas de que el 9000 estigues ocupat)
 
 
 Endpoints:
@@ -133,6 +130,6 @@ Amb els endpoints es compleixen els requisits tecnics i funcionals esmentats. La
     Aquest enfocament permet un codi més fàcil de mantenir i modificar, ja que cada funció o classe té una única responsabilitat clarament definida. Això també redueix el risc d'introduir errors quan s'afegeixen noves funcionalitats.
 
 Autor
-Ari Ruiz Martinez - ariruizmartinez@gmail.com
+    Ari Ruiz Martinez - ariruizmartinez@gmail.com
 
 
