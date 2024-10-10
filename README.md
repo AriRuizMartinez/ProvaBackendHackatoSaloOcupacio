@@ -30,6 +30,7 @@ L'aplicació s'executarà en http://localhost:9000. (El port també es pot cambi
 Endpoints:
 
 Usuaris:
+
     GET-http://localhost:9000/appActivitats/users
 
         Per mitja de d'una petició GET retorna l'informació de tots els usuaris.
